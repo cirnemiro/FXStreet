@@ -1,0 +1,27 @@
+.sidenavbar{
+    background-color: #242D38;
+    &__desktoplogo{
+    }
+
+    
+}
+
+@media (min-width: 800px) {
+    .sidenavbar{
+        min-height: 100vh;
+        min-width: 255px;
+        text-align: center;
+        &__desktoplogo{
+            margin-top: 100px;
+            margin: 47px 0 101px 0;
+        }
+        &__content ul{
+            padding:0 46px;
+        }
+        &__content ul li{
+            height: 10px;
+            background-color: white;
+            margin-bottom: 40px;
+        }
+    }
+}
