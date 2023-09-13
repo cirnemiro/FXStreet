@@ -1,9 +1,21 @@
 .sidenavbar{
     background-color: #242D38;
-    &__desktoplogo{
+    &__mobile{
+        padding: 14px 20px 14px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__menu{
+            display: flex;
+            gap: 21px;
+            &__dot{
+                width: 18px;
+                height: 18px;
+                background-color: #DDDEDF;
+                border-radius: 50%;
+            }
+        }
     }
-
-    
 }
 
 @media (min-width: 800px) {

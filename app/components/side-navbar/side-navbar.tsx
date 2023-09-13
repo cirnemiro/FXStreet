@@ -18,7 +18,14 @@ const SideNavbar = () => {
                     <div className={styles.sidenavbar__desktoplogo}>
                         <Image alt='mobile logo' src={DesktopLogo}/>
                     </div>
-                    :<Image alt='mobile logo' src={MobileLogo}/>            
+                    :
+                    <div className={styles.sidenavbar__mobile}>
+                        <Image alt='mobile logo' src={MobileLogo}/> 
+                        <div className={styles.sidenavbar__mobile__menu}>
+                            <div className={styles.sidenavbar__mobile__menu__dot}></div>
+                            <div className={styles.sidenavbar__mobile__menu__dot}></div>
+                        </div>     
+                    </div>      
                 }
             {
                 isDesktop &&
