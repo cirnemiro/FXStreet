@@ -25,7 +25,7 @@ const NewsFilter = () => {
                 {
                     filters.map((link)=>{
                      return(
-                        <Link href={`/news?filter=${link.value}`} className={filter === link.value ? styles.newsFilter__toggleFilter__selectedLink : styles.newsFilter__toggleFilter__link}>
+                        <Link key={link.value} href={`/news?filter=${link.value}`} className={filter === link.value ? styles.newsFilter__toggleFilter__selectedLink : styles.newsFilter__toggleFilter__link}>
                             {link.label}
                         </Link>
                      )   
