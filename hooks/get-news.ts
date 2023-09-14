@@ -16,7 +16,7 @@ export default function useGetNews(){
     useEffect(()=>{
         try {
             setIsLoading(true)
-            fetch("http://demo7743668.mockable.io/frontend-exercise")
+            fetch("https://demo7743668.mockable.io/frontend-exercise")
                 .then((response) => response.json())  
                     .then((data) => {
                         if (filter === "popular") {
