@@ -1,0 +1,25 @@
+.button{
+    border: none;
+    background-color: transparent;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    min-width: 100px;
+}
+.button:active {
+    scale: 1.1;
+}
+.button:hover .likeIcon path{
+    fill: #D25746;
+}
+.button:hover .saveIcon path{
+    fill: #338473;
+}
+
+.button:hover .likeIcon + p{
+    color: #D25746;
+}
+.button:hover .saveIcon + p{
+    color: #338473;
+}

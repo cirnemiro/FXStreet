@@ -3,7 +3,7 @@ import styles from './navbar.module.scss'
 
 const Navbar = () => {
     return(
-        <div className={styles.navbar}>
+        <nav className={styles.navbar}>
             <div className={styles.navbar__section1}>
                 <div className={styles.navbar__section1__left}>
                     <div className={styles.dot}></div>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
             </div>
             
-        </div>
+        </nav>
     )
 }
 

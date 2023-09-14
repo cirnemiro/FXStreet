@@ -4,15 +4,13 @@ import Image from 'next/image'
 import MobileLogo from '../../../public/assets/logo-mobile.png'
 import DesktopLogo from '../../../public/assets/logo-desktop.png'
 import styles from './side-navbar.module.scss'
-import { useMedia } from 'react-use';
-
-
+import useMediaQuery from '@/hooks/desktop-mediaquery'
 
 
 const SideNavbar = () => {
-    const isDesktop = useMedia("(min-width: 800px)");
+    const {isDesktop} = useMediaQuery()
     return(
-        <div className={styles.sidenavbar}>
+        <nav className={styles.sidenavbar}>
                 {
                     isDesktop ?
                     <div className={styles.sidenavbar__desktoplogo}>
@@ -39,7 +37,7 @@ const SideNavbar = () => {
                     </ul>
                 </div>
             }
-        </div>
+        </nav>
     )
 }
 

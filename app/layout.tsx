@@ -4,8 +4,17 @@ import styles from './page.module.scss'
 import './reset.scss'
 import Navbar from './components/navbar/navbar'
 import SideNavbar from './components/side-navbar/side-navbar'
-
+import { Roboto } from 'next/font/google'
+ 
 const inter = Inter({ subsets: ['latin'] })
+
+const roboto = Roboto({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',

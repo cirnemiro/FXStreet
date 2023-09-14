@@ -1,0 +1,26 @@
+.news{
+    padding: 34px 15px;
+    min-height: 100vh;
+}
+
+@media (min-width: 800px) {
+    .news{
+        display: flex;
+        gap: 27px;
+        padding: 24px;
+        &__content{
+            min-width: 500px;
+            width: 70%;
+        }
+        &__aside{
+            width: 30%;
+            &__article1{
+                background-color: #304C70;
+            }
+            &__article2{
+                background-color: #304C70;
+                border: 2px solid var(--brand-blue-304-c-70, #304C70);
+            }
+        }
+    }
+}
