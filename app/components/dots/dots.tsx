@@ -6,12 +6,12 @@ import FeedImproveIcon from '../icons/feed-improve-icon'
 import LeftArrow from '../icons/left-arrow'
 
 const Dots = () => {
-    const [visiblePopUp, setVisiblePopUp] = useState<any>(false)
+    const [visiblePopUp, setVisiblePopUp] = useState<boolean>(false)
     const [hideContent,setHideContent] = useState<boolean>(false)
 
     return(
         <div className={styles.dots}>
-            <div onClick={()=>{setVisiblePopUp(!visiblePopUp) ;setHideContent(false)}}>
+            <div className={styles.dots__icon} onClick={()=>{setVisiblePopUp(!visiblePopUp) ;setHideContent(false)}}>
                 <DotsIcon />
             </div>
             {

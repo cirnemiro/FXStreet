@@ -9,7 +9,7 @@ export default function useGetNews(){
     const filter = searchParams.get("filter")
     
     const [isLoading ,setIsLoading] = useState<boolean>(true)
-    const [data ,setData] = useState<any>(null)
+    const [data ,setData] = useState<IArticle[] | null>(null)
     const [error,setError] = useState<any>(null)
 
 
@@ -20,9 +20,9 @@ export default function useGetNews(){
                 .then((response) => response.json())  
                     .then((data) => {
                         if (filter === "popular") {
-                            setData(data.filter((article:any) => article.isPopular === true))
+                            setData(data.filter((article:IArticle) => article.isPopular === true))
                         }else if (filter === "latest"){
-                            setData(data.filter((article:any) => article.isPopular === false))
+                            setData(data.filter((article:IArticle) => article.isPopular === false))
 
                         }else{
                             setData(data)

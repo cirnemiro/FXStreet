@@ -1,6 +1,17 @@
 .layout{
     background-color: var(--grayscale-grey-ececf-1, #ECECF1);;
 }
+.home{
+    text-align: center;
+    padding-top: 100px;
+    a{
+        padding: 20px;
+        font-size: 40px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+}
 
 
 @media (min-width: 800px) {
